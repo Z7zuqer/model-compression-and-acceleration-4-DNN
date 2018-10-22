@@ -14,6 +14,7 @@ Xnor-net Imagenet classi?cation using binary convolutional neural networks
 Deep neural networks are robust to weight binarization and other non- linear distortions  
 Loss-aware binarization of deep networks  
 Neural networks with few multiplications
+
 >>> Pruning and Sharing
 >>>> Comparing biases for minimal network construction with back-propagation  
 Advances in neural information processing systems 2  
