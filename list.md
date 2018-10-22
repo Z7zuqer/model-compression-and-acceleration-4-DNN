@@ -2,10 +2,10 @@
 
 >> Parameter pruning and sharing
 >>> Quantization and Binarization
-Compressing deep convolutional networks using vector quantization
-Quantized convolutional neural networks for mobile devices
-Improving the speed of neural networks on cpus
-Deep learning with limited numerical precision
+>>>> Compressing deep convolutional networks using vector quantization  
+Quantized convolutional neural networks for mobile devices  
+Improving the speed of neural networks on cpus  
+Deep learning with limited numerical precision  
 Deep compression Compressing deep neural networks with pruning, trained quantization and huffman coding
 Towards the limit of network quantization
 Binaryconnect Training deep neural networks with binary weights during propagations
