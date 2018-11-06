@@ -1,10 +1,5 @@
 # compression
 * [Adaptive Sample-space & Adaptive Probability coding: a neural-network based approach for compression](https://openreview.net/forum?id=HkzNXhC9KQ)
-  * In this paper, we propose a simple and efﬁcient model compression framework called DeepTwist which distorts weights in an occasional manner without modifying the underlying training algorithms
-  * Occasional compression within *a S<sub>D</sub> step* finally enhance acc
-    * pruning
-    * quantization
-    * low-rank approximation
 * [Practical lossless compression with latent variables using bits back coding ](https://openreview.net/forum?id=ryE98iR5tm)
   * lossless compression of large image datasets
 * [Sparse Binary Compression: Towards Distributed Deep Learning with minimal Communication](https://openreview.net/forum?id=B1edvs05Y7)
@@ -12,6 +7,11 @@
   * SBC combines existing techniques of communication delay and gradient sparsification with a novel binarization method and optimal weight update encoding
   * stack of previous tech, lack of novelty
 * [DeepTwist: Learning Model Compression via Occasional Weight Distortion ](https://openreview.net/forum?id=HJzLdjR9FX)
+  * In this paper, we propose a simple and efﬁcient model compression framework called DeepTwist which distorts weights in an occasional manner without modifying the underlying training algorithms
+  * Occasional compression within *a S<sub>D</sub> step* finally enhance acc
+    * pruning
+    * quantization
+    * low-rank approximation
 * [Exploiting Invariant Structures for Compression in Neural Networks ](https://openreview.net/forum?id=rkl85oRqYX)
 * [Non-vacuous Generalization Bounds at the ImageNet Scale: a PAC-Bayesian Compression Approach](https://openreview.net/forum?id=BJgqqsAct7)
 * [Adaptive Estimators Show Information Compression in Deep Neural Networks ](https://openreview.net/forum?id=SkeZisA5t7)
