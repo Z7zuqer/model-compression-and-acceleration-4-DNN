@@ -12,4 +12,7 @@
 * [incremental network quantization](https://arxiv.org/abs/1702.03044)
 * [Hashed-Net](https://arxiv.org/abs/1702.00758)
 * [Quantized Convolutional Neural Networks for Mobile Devices](https://arxiv.org/abs/1512.06473)
+# quantization article
+* [量化方向论文](https://blog.csdn.net/u012101561/article/details/80868352?utm_source=blogxgwz34)
+
 
