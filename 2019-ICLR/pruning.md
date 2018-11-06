@@ -1,3 +1,4 @@
+# pruning
 * [PRUNING IN TRAINING: LEARNING AND RANKING SPARSE CONNECTIONS IN DEEP CONVOLUTIONAL NETWORKS ](https://openreview.net/forum?id=r1GgDj0cKX)
 * [Cumulative Saliency based Globally Balanced Filter Pruning For Efficient Convolutional Neural Networks ](https://openreview.net/forum?id=H1fevoAcKX)
 * [PRUNING WITH HINTS: AN EFFICIENT FRAMEWORK FOR MODEL ACCELERATION](https://openreview.net/forum?id=Hyffti0ctQ)

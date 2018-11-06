@@ -1,3 +1,4 @@
+# compression
 * [Adaptive Sample-space & Adaptive Probability coding: a neural-network based approach for compression](https://openreview.net/forum?id=HkzNXhC9KQ)
 * [Practical lossless compression with latent variables using bits back coding ](https://openreview.net/forum?id=ryE98iR5tm)
 * [Sparse Binary Compression: Towards Distributed Deep Learning with minimal Communication](https://openreview.net/forum?id=B1edvs05Y7)
