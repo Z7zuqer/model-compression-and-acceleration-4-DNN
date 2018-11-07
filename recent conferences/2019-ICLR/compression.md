@@ -30,6 +30,12 @@
   * We also found that there is a large amount of variation in compression between different network initializations
   * L2 regularization leads to significantly increased compression while preventing overfitting
 * [Integer Networks for Data Compression with Latent-Variable Models ](https://openreview.net/forum?id=S1zz2i0cY7)
+  * introduce an *interger neural network* to solve the problem raised by using *variational latent-variable models for data compression*.**the latent Representation needs to be subjected to entropy coding**
+  * autor define the relationship between inputs **u** and outputs **w** of one layer is **v**=(**H** \* **u**+**b**)/**C** and **w**=g(**v**)
+  * **H** and **w**:8-bit signed
+  * **b v**: 32-bit signed
+  * **c**: 32-bit unsigned
+  * g<sub>ReLU</sub>(v)=max(min(v,255),0) (quantized ReLU and quantized Tanh)
 * [NETWORK COMPRESSION USING CORRELATION ANALYSIS OF LAYER RESPONSES](https://openreview.net/forum?id=rkl42iA5t7)
 * [What Information Does a ResNet Compress? ](https://openreview.net/forum?id=HklbTjRcKX)
   * This paper was motivated by the debate over the relevance of the Information Bottleneck principle to deep learning
