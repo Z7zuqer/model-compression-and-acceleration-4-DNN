@@ -13,8 +13,22 @@
     * quantization
     * low-rank approximation
 * [Exploiting Invariant Structures for Compression in Neural Networks ](https://openreview.net/forum?id=rkl85oRqYX)
+  * The submission suggests a methodology compressing the parameters of neural network (NN) architectures
+    * first converting them to higher-order tensors
+    * then factorizing them with various tensor decompositions
+  * several issues
+    * the invariant structures suggested by the authors do appear within the parameters of a neural network architecture and such invariant structures are captured by the higher-order tensor decomposition proposed
+    * no need to high tensor: decomposition A=a\*b is enough, there is no need to T=A\*B and then T=x<sub>1</sub>\*x<sub>2</sub>\*x<sub>3</sub>\*x<sub>4</sub>
 * [Non-vacuous Generalization Bounds at the ImageNet Scale: a PAC-Bayesian Compression Approach](https://openreview.net/forum?id=BJgqqsAct7)
+  * The paper presents an application of PAC-Bayesian bounds to the problem of ImangeNet classification the authors introduce some clever choices for the prior distribution (on the hypothesis space) that allow one to incoperate a compression scheme and obtain a (non-vacuous) bound for the predictor.
+  * a method for taking into account symmetries of the uncompressed parameters
+
 * [Adaptive Estimators Show Information Compression in Deep Neural Networks ](https://openreview.net/forum?id=SkeZisA5t7)
+  *  In this paper we developed a more robust mutual information estimation technique, that adapts to hidden activity of neural networks and produces more sensitive measurements of activations from all functions, especially unbounded functions.
+  * we show that saturation of the activation function is not required for compression
+  * the amount of compression varies between different activation functions
+  * We also found that there is a large amount of variation in compression between different network initializations
+  * L2 regularization leads to significantly increased compression while preventing overfitting
 * [Integer Networks for Data Compression with Latent-Variable Models ](https://openreview.net/forum?id=S1zz2i0cY7)
 * [NETWORK COMPRESSION USING CORRELATION ANALYSIS OF LAYER RESPONSES](https://openreview.net/forum?id=rkl42iA5t7)
 * [What Information Does a ResNet Compress? ](https://openreview.net/forum?id=HklbTjRcKX)
