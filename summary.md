@@ -17,6 +17,11 @@
 * [Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding](https://arxiv.org/abs/1510.00149)
 * [MODEL COMPRESSION WITH GENERATIVE ADVERSARIAL NETWORKS](https://openreview.net/forum?id=Byxz4n09tQ)
 * [Dynamic Network Surgery for Efficient DNNs](https://arxiv.org/abs/1608.04493)
+  * 文章主要提出可以恢复的剪枝
+    * 传统剪枝会删除重要的连接而且周期长
+  * 用mask来代表状态，每轮利用mask后的参数计算出的loss更新参数
+  * 再通过更新后的权值更新mask(a<sub>k</sub>和b<sub></sub>)
+  * 为了加速训练作者1：减少删除连接的概率避免难收敛2：卷积层和全连接层分开剪枝
 * [To prune, or not to prune: exploring the efficacy of pruning for model compression](http://cn.arxiv.org/abs/1710.01878)
 * [Learning both Weights and Connections for Efficient Neural Networks](http://cn.arxiv.org/abs/1506.02626)
 * [Sensitivity Based Network Pruning: A Modern Perspective](http://users.cecs.anu.edu.au/~Tom.Gedeon/conf/ABCs2018/paper/ABCs2018_paper_135.pdf)
