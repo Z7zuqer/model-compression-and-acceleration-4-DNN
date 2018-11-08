@@ -19,6 +19,14 @@
 * [Dynamic Network Surgery for Efficient DNNs](https://arxiv.org/abs/1608.04493)
 * [To prune, or not to prune: exploring the efficacy of pruning for model compression](http://cn.arxiv.org/abs/1710.01878)
 * [Learning both Weights and Connections for Efficient Neural Networks](http://cn.arxiv.org/abs/1506.02626)
+* [Sensitivity Based Network Pruning: A Modern Perspective](http://users.cecs.anu.edu.au/~Tom.Gedeon/conf/ABCs2018/paper/ABCs2018_paper_135.pdf)
+  * 定义了一个在反向传播时计算神经元连接敏感度的公式
+  * 通过累计在反向时偏导对权重的误差
+* [A pruning based method to learn both weights and connections for LSTM](https://nlp.stanford.edu/courses/cs224n/2015/reports/2.pdf)
+  * 剪枝完重训练
+  * 按照权值绝对值大小剪枝
+* [Second order derivatives for network pruning: Optimal Brain Surgeon](https://papers.nips.cc/paper/647-second-order-derivatives-for-network-pruning-optimal-brain-surgeon.pdf)
+  * 待看，求二阶偏导作为重要性
 # QUANTIZATION
   ## binarization
   * [binary neural network](https://arxiv.org/abs/1602.02830)
