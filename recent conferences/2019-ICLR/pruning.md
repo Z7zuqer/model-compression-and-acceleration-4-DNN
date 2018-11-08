@@ -5,7 +5,8 @@
   * 引入了两个penalty作为衡量的标准 边训练边剪枝（感觉只要权值无关的剪枝都可以边训边减）
 * [Cumulative Saliency based Globally Balanced Filter Pruning For Efficient Convolutional Neural Networks ](https://openreview.net/forum?id=H1fevoAcKX)
   * 作者从整个网络的层面来减filter，单batch对权值的作用衡量不准故累计整个过程的影响作为标准
-  * 先整体训练一遍，作者累积过程中的所有梯度
+  * 先整体训练一遍，作者累积过程中的所有梯度，对每个filter取mean，然后引入一个公式(*Balanced Saliency Formula*)得到每个filter的分数，依据这个分数剪枝
+  * resnet34压50%在imagenet top1掉2个点 resnet18压47%掉3
 * [PRUNING WITH HINTS: AN EFFICIENT FRAMEWORK FOR MODEL ACCELERATION](https://openreview.net/forum?id=Hyffti0ctQ)
 * [SNIP: SINGLE-SHOT NETWORK PRUNING BASED ON CONNECTION SENSITIVITY](https://openreview.net/forum?id=B1VZqjAcYX)
   * 文章大致还是提出一个剪枝标准，单考虑更新时的梯度，公式是用误差函数对 C<sub>mask</sub>求偏导（为了减少权值对连接重要性的影响）
