@@ -35,8 +35,8 @@
   * 文章主要提出可以恢复的剪
     * 传统剪枝会删除重要的连接而且周期长
   * 用mask来代表状态，每轮利用mask后的参数计算出的loss更新参数
-  * 再��1�7�过更新后的权��1�7�更新mask(a<sub>k</sub>和b<sub></sub>)
-  * 为了加��1�7�训练作��?�减少删除连接的概率避免难收��?�卷积层和全连接层分弄1�7剪枝
+  * 再用过更新后的权重导数更新mask(a<sub>k</sub>和b<sub></sub>)
+  * 为了加速训练减少删除连接的概率避免难收敛卷积层和全连接层分层剪枝
 * [To prune, or not to prune: exploring the efficacy of pruning for model compression](http://cn.arxiv.org/abs/1710.01878)
 * [Learning both Weights and Connections for Efficient Neural Networks](http://cn.arxiv.org/abs/1506.02626)
 * [Sensitivity Based Network Pruning: A Modern Perspective](http://users.cecs.anu.edu.au/~Tom.Gedeon/conf/ABCs2018/paper/ABCs2018_paper_135.pdf)
@@ -46,7 +46,7 @@
   * 剪枝完重训练
   * 按照权重绝对值
 * [Second order derivatives for network pruning: Optimal Brain Surgeon](https://papers.nips.cc/paper/647-second-order-derivatives-for-network-pruning-optimal-brain-surgeon.pdf)
-  * 待看，求二阶偏导作为重要
+  * 待看，求二阶偏导作为重要是否的标准
 # QUANTIZATION
   ## binarization
   * [binary neural network](https://arxiv.org/abs/1602.02830)
@@ -65,9 +65,9 @@
   ## quantization article
   * [Extremely Low Bit Neural Network: Squeeze the Last Bit Out with ADMM](https://arxiv.org/abs/1707.09870v1)
   *  [summary](https://blog.csdn.net/u012101561/article/details/80868352?utm_source=blogxgwz34)
-  * [Scalable Methods for 8-bit Training of Neural Networks](https://arxiv.org/abs/1707.09870v1)
+  * [Scalable Methods for 8-bit Training of Neural Networks](https://arxiv.org/abs/1805.11046)
     * 待复现
-  * [Extremely Low Bit Neural Network: Squeeze the Last Bit Out with ADMM](https://arxiv.org/abs/1805.11046v1)
+  * [Extremely Low Bit Neural Network: Squeeze the Last Bit Out with ADMM](https://arxiv.org/abs/1707.09870)
     * 待复现
 # NET
 * [GoogLeNet](https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf)
