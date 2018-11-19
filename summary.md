@@ -1,7 +1,7 @@
 # CSDNWRITERS
 * [paper summary](https://www.jianshu.com/p/e73851f32c9f)  
 * [csdn writer](https://blog.csdn.net/yingpeng_zhong?t=1)  
-* [综述作�1�7�](https://blog.csdn.net/wspba)  
+* [综述作者](https://blog.csdn.net/wspba)  
 * [压缩神经网络实验及简直策略等](https://blog.csdn.net/jason19966)  
 * [several paper](https://blog.csdn.net/cookie_234?t=1)  
 * [地大大](https://blog.csdn.net/liujianlin01)  
@@ -17,11 +17,11 @@
 * [Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding](https://arxiv.org/abs/1510.00149)
 * [MODEL COMPRESSION WITH GENERATIVE ADVERSARIAL NETWORKS](https://openreview.net/forum?id=Byxz4n09tQ)
 * [Dynamic Network Surgery for Efficient DNNs](https://arxiv.org/abs/1608.04493)
-  * 文章主要提出可以恢复的剪构1�7
-    * 传统剪枝会删除重要的连接而且周期镄1�7
+  * 文章主要提出可以恢复的剪
+    * 传统剪枝会删除重要的连接而且周期长
   * 用mask来代表状态，每轮利用mask后的参数计算出的loss更新参数
-  * 再�1�7�过更新后的权�1�7�更新mask(a<sub>k</sub>和b<sub></sub>)
-  * 为了加�1�7�训练作�?�减少删除连接的概率避免难收�?�卷积层和全连接层分弄1�7剪枝
+  * 再��1�7�过更新后的权��1�7�更新mask(a<sub>k</sub>和b<sub></sub>)
+  * 为了加��1�7�训练作��?�减少删除连接的概率避免难收��?�卷积层和全连接层分弄1�7剪枝
 * [To prune, or not to prune: exploring the efficacy of pruning for model compression](http://cn.arxiv.org/abs/1710.01878)
 * [Learning both Weights and Connections for Efficient Neural Networks](http://cn.arxiv.org/abs/1506.02626)
 * [Sensitivity Based Network Pruning: A Modern Perspective](http://users.cecs.anu.edu.au/~Tom.Gedeon/conf/ABCs2018/paper/ABCs2018_paper_135.pdf)
@@ -29,9 +29,9 @@
   * 通过累计在反向时偏导对权重的误差
 * [A pruning based method to learn both weights and connections for LSTM](https://nlp.stanford.edu/courses/cs224n/2015/reports/2.pdf)
   * 剪枝完重训练
-  * 按照权�1�7�绝对�1�7�大小剪构1�7
+  * 按照权重绝对值
 * [Second order derivatives for network pruning: Optimal Brain Surgeon](https://papers.nips.cc/paper/647-second-order-derivatives-for-network-pruning-optimal-brain-surgeon.pdf)
-  * 待看，求二阶偏导作为重要怄1�7
+  * 待看，求二阶偏导作为重要
 # QUANTIZATION
   ## binarization
   * [binary neural network](https://arxiv.org/abs/1602.02830)
@@ -51,9 +51,9 @@
   * [Extremely Low Bit Neural Network: Squeeze the Last Bit Out with ADMM](https://arxiv.org/abs/1707.09870v1)
   *  [summary](https://blog.csdn.net/u012101561/article/details/80868352?utm_source=blogxgwz34)
   * [Scalable Methods for 8-bit Training of Neural Networks](https://arxiv.org/abs/1707.09870v1)
-    * ������
+    * 待复现
   * [Extremely Low Bit Neural Network: Squeeze the Last Bit Out with ADMM](https://arxiv.org/abs/1805.11046v1)
-    * ������
+    * 待复现
 # NET
 * [GoogLeNet](https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf)
 * [SqueezeNet](https://arxiv.org/abs/1602.07360)
