@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # CSDNWRITERS
 * [paper summary](https://www.jianshu.com/p/e73851f32c9f)  
 * [csdn writer](https://blog.csdn.net/yingpeng_zhong?t=1)  
@@ -113,4 +111,3 @@
 * [SqueezeNet](https://arxiv.org/abs/1602.07360)
 * [MobileNets](https://arxiv.org/abs/1704.04861)
 * [ShuffleNet](https://arxiv.org/abs/1707.01083)
->>>>>>> 5ce020b2abc73dcde4b0a71a6bfd23813a0e675f
