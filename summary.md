@@ -50,7 +50,7 @@
   ## quantization article
   * [Extremely Low Bit Neural Network: Squeeze the Last Bit Out with ADMM](https://arxiv.org/abs/1707.09870v1)
   *  [summary](https://blog.csdn.net/u012101561/article/details/80868352?utm_source=blogxgwz34)
-  * [Scalable Methods for 8-bit Training of Neural Networks](https://arxiv.org/abs/1707.09870v1)
+  * [Scalable Methods for 8-bit Training of Neural Networks](https://arxiv.org/abs/1805.11046)
     * 待复现
   * [Extremely Low Bit Neural Network: Squeeze the Last Bit Out with ADMM](https://arxiv.org/abs/1805.11046v1)
     * 待复现
