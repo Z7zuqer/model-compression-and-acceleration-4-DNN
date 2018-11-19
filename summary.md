@@ -6,11 +6,49 @@
 * [several paper](https://blog.csdn.net/cookie_234?t=1)  
 * [地大大](https://blog.csdn.net/liujianlin01)  
 # ARTICLES
-* [合集](https://www.jiqizhixin.com/articles/2018-06-01-11)  
+* [机器之心总结](https://www.jiqizhixin.com/articles/2018-06-01-11)  
+  * Quantization
+    * deep compression最后参数会变成一个稀疏的矩阵，作者自己提出了一种编码方式
+    * 量化其实是一种权值共享的策略
+    * 因为梯度很小，所以使用无法使用低精度来正确表达梯度，同时梯度是有高斯白噪声的，累加梯度才能抵消噪声
+    * 二值化相当于给权重和输出值添加了噪声，而这样的噪声具有正则化作用，可以防止模型过拟合,二值化也可以被看做是 Dropout 的一种变形
+    * Xnor-Net 在 BNN 的基础上引入了比例因子
+    * ternary-net 权值的分布接近于一个正态分布和一个均匀分布的组合,使用一个 scale 参数去最小化三值化前的权值和三值化之后的权值的 L2 距离。
+    * 当然，这种方法有进化版本，我们完全可以将权值组合变成（-2，-1，0，1，2）的组合，以期获得更高的准确率。
+    * 权值三值化并没有完全消除乘法器
+    * *DoReLa-Net*<sub>detailed</sub> 对卷积层的整体输出计算一个均值常量作为比例因子
+  * *目前的高精度压缩算法只适合于传统的有很多冗余的网络*
+  * [hardware](http://www.rle.mit.edu/eems/wp-content/uploads/2017/11/2017_pieee_dnn.pdf)
+  * 硬件加速神经网络前向运算的最主要的任务就是完成卷积优化，减少卷积运算的资源和能源消耗非常核心
+  * main idea of optimize convolution
+    * 内存换取时间,一次加载图片，产生多次的数据，而不需要多次访问图片，这就是用内存来换时间
+    * 乘法优化,我们可以把卷积核心展开成一条行，然后多个卷积核就可以排列成多行，再把图像也用类似的方法展开，就可以把一个卷积问题转换成乘法问题。这样就是一行乘以一列，就是一个结果了。这样虽然多做了一些展开的操作，但是对于计算来讲，速度会提升很多。
+    * GPU
+    * strassen algorithm,分析 CNN 的线性代数特性，增加加法减少乘法，这样降低了卷积运算的计算的复杂度
 * [模型压缩论文及其相关](https://www.jishux.com/p/4007c8b22f2c7083)  
-* [神经网络模型压缩与加速的常见方法](https://blog.csdn.net/LiJiancheng0614/article/details/79478792?utm_source=blogxgwz1)  
-* [prune和网络剪枝](https://blog.csdn.net/SIGAI_CSDN/article/details/80803956?utm_source=blogxgwz8)  
-* [巨全的一个总结](https://github.com/Ewenwan/MVision/tree/85c37ba2df091570510d5240ea2f698b75e3fbb6/CNN/Deep_Compression)
+  * 深度神经网络的量化技术可主要分为两类：完整训练后量化和训练时量化
+    * 量化类的方法属于改变网络多样性的方法，容易造成精度损失
+    * 完整训练后量化
+    * 训练时量化
+  * *some about quantization*
+* [SigAI-卷积神经网络的压缩和加速](https://mp.weixin.qq.com/s?__biz=MzU4MjQ3MDkwNA==&mid=2247485042&idx=1&sn=cdcf8d4b07acf64c7a6f5f7c1a731a12&chksm=fdb69be5cac112f377766984afb87313c1e1c58d94c80005f0f6f6af61ee5a4bd1bf6c6157b6&token=1065243837&lang=zh_CN#rd)
+  * pruning
+    * 删掉一个filter，相应的输出特征图将少一个通道 *filter-level*
+    * 将3*3的kernel删成某个固定的形状 *group-level pruning*
+    * 不急着删去参数，而是将那些没用的参数设为0，于是矩阵的乘法可以用稀疏矩阵的乘法来代替 *Fine-grained，vector-level，kernel-level*
+  * low-rank
+    * 用若干小矩阵对参数矩阵进行估计,没有改变基础运算的结构，不需要额外定义新的操作,低秩估计方法存在一个待解决的问题，就是保留多少秩是不明确的
+      * 保留太多的秩可以保证准确率，但加速压缩效果不好
+      * 保留秩太少，加速压缩效果好
+    * 直接对张量进行分解，而且卷积也符合结合律
+  * Quantization
+    * 移动端和嵌入式设别的CPU处理整数的计算速度要快于浮点数
+    * Tensorflow给出了定点化的Op操作
+  * Distillation
+    * 直接设计了一个简单结构的小网络
+    * 模型蒸馏方法仍有很大的研究空间
+  * *related articles*
+* [github巨全的一个总结](https://github.com/Ewenwan/MVision/tree/85c37ba2df091570510d5240ea2f698b75e3fbb6/CNN/Deep_Compression)
   * Pruning
     * 基于量级的裁剪方式（用weight值的大小来评判其重要性）
     * [统计filter中激活为0的值的数量作为标准](https://arxiv.org/pdf/1607.03250.pdf)
