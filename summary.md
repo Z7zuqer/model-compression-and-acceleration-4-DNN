@@ -11,6 +11,21 @@
 * [神经网络模型压缩与加速的常见方法](https://blog.csdn.net/LiJiancheng0614/article/details/79478792?utm_source=blogxgwz1)  
 * [prune和网络剪枝](https://blog.csdn.net/SIGAI_CSDN/article/details/80803956?utm_source=blogxgwz8)  
 * [github summary](https://github.com/Ewenwan/MVision/tree/master/CNN/Deep_Compression/quantization)
+* [巨全的一个总结](https://github.com/Ewenwan/MVision/tree/85c37ba2df091570510d5240ea2f698b75e3fbb6/CNN/Deep_Compression)
+  * Pruning
+    * 基于量级的裁剪方式（用weight值的大小来评判其重要性）
+    * [统计filter中激活为0的值的数量作为标准](https://arxiv.org/pdf/1607.03250.pdf)
+    * [基于熵值的剪裁](https://arxiv.org/pdf/1706.05791.pdf)
+    * [基于能量效率的裁剪方式](https://arxiv.org/pdf/1611.05128.pdf)
+    * 遗传算法思想,随机剪裁，选择效果好的
+    * 基于icc组内相关来衡量filter的重要性
+    * 基于神经元激活相关性的重要性判别方法
+    * 将裁剪问题当做一个组合优化问题
+    * 一种基于Hessian矩阵的网络修剪算法
+  * Quantization
+    * Weights
+    * feature map
+    * gradient
 # PRUNING
 * [Soft Weight-Sharing for Neural Network Compression ](http://cn.arxiv.org/abs/1702.04008)
 * [Channel Pruning for Accelerating Very Deep Neural Networks](https://arxiv.org/abs/1707.06168)
