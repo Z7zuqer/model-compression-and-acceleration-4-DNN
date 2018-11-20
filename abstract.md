@@ -104,7 +104,6 @@
   * [Hashed-Net](https://arxiv.org/abs/1702.00758)
   * [Quantized Convolutional Neural Networks for Mobile Devices](https://arxiv.org/abs/1512.06473)
   ## quantization article
-  * [Extremely Low Bit Neural Network: Squeeze the Last Bit Out with ADMM](https://arxiv.org/abs/1707.09870v1)
   *  [summary](https://blog.csdn.net/u012101561/article/details/80868352?utm_source=blogxgwz34)
 # NET
 * [GoogLeNet](https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf)
