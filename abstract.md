@@ -3,9 +3,9 @@
 * [csdn writer](https://blog.csdn.net/yingpeng_zhong?t=1)  
   * （笔记）细颗粒度的三值网络Ternary Neural Networks with Fine-Grained Quantization
   * （笔记）网络压缩量化，训练三值量化TRAINED TERNARY QUANTIZATION
+  * （笔记）通过知识蒸馏和量化进行模型压缩MODEL COMPRESSION VIA DISTILLATION AND QUANTIZATION
     * 有一个浮点模型 *w*，一个量化模型 *w^q* ，用 *量化模型* 计算前向loss（加上知识蒸馏的loss），*对w^q计算梯度*，用以 *更新浮点模型*。每次前向计算之前用更新的浮点模型更新量化模型。
     * *teacher* quantized and *student* unquantized
-  * （笔记）通过知识蒸馏和量化进行模型压缩MODEL COMPRESSION VIA DISTILLATION AND QUANTIZATION
   * （笔记）神经网络压缩，Ristretto: Hardware-Oriented Approximation of Convolutional Neural Networks（一）
 * [综述作者](https://blog.csdn.net/wspba)  
   * 论文笔记：ThiNet——一种filter级的模型裁剪算法
