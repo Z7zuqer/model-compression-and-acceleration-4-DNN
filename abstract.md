@@ -28,7 +28,8 @@
   * 压缩神经网格（二）：融合分支的思想
 * [several paper](https://blog.csdn.net/cookie_234?t=1)  
   * Incremental Network Quantization: Towards Lossless CNNs with Low-precision Weights
-  * Soft weight-sharing for neural network compression
+  * *Soft weight-sharing for neural network compression*
+
   * Exploring the Regularity of Sparse Structure in Convolutional Neural Networks
   * Learning both Weights and Connections for Efficient Neural Networks
   * Do Deep Nets Really Need to be Deep?
@@ -95,6 +96,7 @@
     * Weights
     * feature map
     * gradient
+* [Model-Compression-Papers](https://github.com/chester256/Model-Compression-Papers)
 # PRUNING
 * [Soft Weight-Sharing for Neural Network Compression ](http://cn.arxiv.org/abs/1702.04008)
 * [Channel Pruning for Accelerating Very Deep Neural Networks](https://arxiv.org/abs/1707.06168)
