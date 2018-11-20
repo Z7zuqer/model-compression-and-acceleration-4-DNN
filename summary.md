@@ -95,6 +95,10 @@
   * [BinaryRelax- A Relaxation Approach For Training Deep Neural Networks With Quantized Weights](http://cn.arxiv.org/abs/1801.06313)
   ## fixed-point quantization
   * [fixed-point factorized network](https://arxiv.org/abs/1611.01972)
+  * [Scalable Methods for 8-bit Training of Neural Networks](https://arxiv.org/abs/1805.11046)
+    * 待复现
+  * [Extremely Low Bit Neural Network: Squeeze the Last Bit Out with ADMM](https://arxiv.org/abs/1707.09870)
+    * 待复现
   ## quantization method
   * [incremental network quantization](https://arxiv.org/abs/1702.03044)
   * [Hashed-Net](https://arxiv.org/abs/1702.00758)
@@ -102,10 +106,6 @@
   ## quantization article
   * [Extremely Low Bit Neural Network: Squeeze the Last Bit Out with ADMM](https://arxiv.org/abs/1707.09870v1)
   *  [summary](https://blog.csdn.net/u012101561/article/details/80868352?utm_source=blogxgwz34)
-  * [Scalable Methods for 8-bit Training of Neural Networks](https://arxiv.org/abs/1805.11046)
-    * 待复现
-  * [Extremely Low Bit Neural Network: Squeeze the Last Bit Out with ADMM](https://arxiv.org/abs/1707.09870)
-    * 待复现
 # NET
 * [GoogLeNet](https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf)
 * [SqueezeNet](https://arxiv.org/abs/1602.07360)
