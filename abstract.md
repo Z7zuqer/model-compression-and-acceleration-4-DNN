@@ -1,10 +1,34 @@
 # CSDNWRITERS
 * [paper summary](https://www.jianshu.com/p/e73851f32c9f)  
 * [csdn writer](https://blog.csdn.net/yingpeng_zhong?t=1)  
+  * （笔记）细颗粒度的三值网络Ternary Neural Networks with Fine-Grained Quantization
+  * （笔记）网络压缩量化，训练三值量化TRAINED TERNARY QUANTIZATION
+    * 有一个浮点模型 *w*，一个量化模型 *w^q* ，用 *量化模型* 计算前向loss（加上知识蒸馏的loss），*对w^q计算梯度*，用以 *更新浮点模型*。每次前向计算之前用更新的浮点模型更新量化模型。
+    * *teacher* quantized and *student* unquantized
+  * （笔记）通过知识蒸馏和量化进行模型压缩MODEL COMPRESSION VIA DISTILLATION AND QUANTIZATION
+  * （笔记）神经网络压缩，Ristretto: Hardware-Oriented Approximation of Convolutional Neural Networks（一）
 * [综述作者](https://blog.csdn.net/wspba)  
+  * 论文笔记：ThiNet——一种filter级的模型裁剪算法
+  * 论文笔记：DeepRebirth——从非权重层入手来进行模型压缩
+  * 深度学习模型压缩方法综述（1-3）
+  * residual
 * [压缩神经网络实验及简直策略等](https://blog.csdn.net/jason19966)  
+  * 压缩神经网络（四）：Deep Compression（附加问题）
+  * 压缩神经网络 实验记录（剪枝 + rebirth + mobilenet）
+  * 压缩神经网格（三）：MobileNets
+  * 压缩神经网络（一）：剪枝的基本思想
+  * 压缩神经网格（二）：融合分支的思想
 * [several paper](https://blog.csdn.net/cookie_234?t=1)  
+  * Incremental Network Quantization: Towards Lossless CNNs with Low-precision Weights
+  * Soft weight-sharing for neural network compression
+  * Exploring the Regularity of Sparse Structure in Convolutional Neural Networks
+  * Learning both Weights and Connections for Efficient Neural Networks
+  * Do Deep Nets Really Need to be Deep?
+  * caffe 解读
 * [地大大](https://blog.csdn.net/liujianlin01)  
+  * 挺多的
+  * Fixed-Point Performance Analysis of Recurrent Neural Networks
+  * 【Quantized Convolutional Neural Networks for Mobile Devices】论文笔记
 # ARTICLES
 * [机器之心总结](https://www.jiqizhixin.com/articles/2018-06-01-11)  
   * Quantization
