@@ -11,7 +11,7 @@
   * 2018-ICLR.md
   * 2018-ICML.md
   * 2018-NIPS.md
-* abstract.md
 * survey
   * 2018
   * 2017
+* abstract.md
